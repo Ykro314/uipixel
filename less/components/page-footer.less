@@ -1,0 +1,195 @@
+.twitter-slider {
+  background: @bg-header;   
+  padding: 100px 0;
+  text-align: center;
+  &__logo {
+    position: relative;
+    width: 70px;
+    height: 70px;  
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background: @bg-gold;
+    border: 13px solid @bg-header;
+    box-shadow: 0 0 0 2px @bg-gold;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .icon-twitter:before {
+    position: absolute;
+    top: 18px;
+    left: 12px;
+    font-size: 35px;
+    color: white;
+  }
+  &__controls {
+    width: 120px;
+    margin: 0 auto;
+    a {
+      position: relative;
+      display: inline-block;
+      margin-left: 40px;
+      width: 35px;
+      height: 35px;
+      border: 1px solid white;
+      border-radius: 50%;
+      margin-right: -4px;
+    }
+    a:first-child {
+      margin-left: 0;
+    }
+    a:before {
+      content: "";
+      position: absolute;
+      top: 11px;
+      width: 8px;
+      height: 8px;
+      border: 5px solid white;
+      transform: rotate(45deg);
+    }
+    a:first-child:before {
+      left: 12px;
+      border-top: none;
+      border-right: none;
+    }
+    a:last-child:before {
+      left: 10px;
+      border-bottom: none;
+      border-left: none;
+    }
+  }
+}  
+
+.slide {
+  font-size: @font-size-18;
+  line-height: @line-height-37;
+  color: white;
+  &__content {
+    margin-bottom: 20px;
+  }
+  &__author {
+    font-weight: bold;
+    margin-bottom: 45px;
+  }
+}
+
+.contact {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  text-align: center;
+  &__anchor {
+    display: block;
+    width: 210px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    font-size: @font-size-35;
+    line-height: @line-height-30;
+    font-weight: bold; 
+    color: #5b6074;
+
+    }
+  &__anchor:after {
+    position: absolute;
+    bottom: 0;
+    left: 57px;
+    width: 95px;
+    height: 2px;
+    content: "";
+    background: #dbdde5; 
+  }
+  &__phrase{
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: @font-size-16;
+    line-height: @line-height-30;
+    color: #a5aabe;
+    text-transform: uppercase;
+  }
+  &__email,
+  &__telephone {
+    position: relative;
+    padding: 17px 0;
+    padding-left: 110px;
+    margin-bottom: 40px;
+    display: inline-block;
+    text-transform: none;
+    color: #a5aabe;
+    font-size: 20px;
+    line-height: @line-height-30;
+  }
+  &__email:after,
+  &__telephone:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid @bg-gold;
+    border-radius: 50%;
+  }
+  &__email:before,
+  &__telephone:before {
+    position: absolute;
+    top:19px;
+    left: 37px;
+    font-size: 28px;
+    color: @bg-gold;
+  }
+  .contact__form {
+    text-align: left;
+    input[type="email"],
+    input[type="text"],
+    textarea {
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 20px;
+      padding-left: 30px;
+      margin-bottom: 20px;
+      font-size: @font-size-15;
+      background: #f8f8f8;
+      border-radius: 5px;
+      border: none;
+    }
+    input[type="text"] {
+      width: 47%;
+      margin-right: 5%;
+    }
+    input[type="email"] {
+      width: 47%;
+    }
+    textarea{
+      width: 100%;
+      height: 200px;
+    }
+    input[type="submit"] {
+      display: block;
+      width: 300px;
+      margin: 0 auto;
+      padding: 18px 0;
+      background: @bg-gold;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      font-size: @font-size-18;
+      line-height: @line-height-30;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.copyright {
+  padding: 25px 0;
+  text-align: center;
+  border-top: 1px solid #f3f3f3;
+  &__info {
+    color: #cacaca;
+    font-size: @font-size-13;
+    line-height: @line-height-30;
+  }
+}
+
+

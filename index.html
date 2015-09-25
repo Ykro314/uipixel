@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/uipixels.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     
   </head>
@@ -19,27 +20,27 @@
        <div class="inner">
          <nav>
            <ul class="main-menu">
-             <li><a href="#">About</a></li>
-             <li><a href="#">Work</a></li>
-             <li><a href="#">Blog</a></li>
-             <li><a href="#">Contact</a></li>
+             <li class="main-menu__item"><a class='toplink' href="#about" id="about-menu">About</a></li>
+             <li class="main-menu__item"><a class='toplink' href="#work" id="work-menu">Work</a></li>
+             <li class="main-menu__item"><a class='toplink' href="#blog" id="blog-menu">Blog</a></li>
+             <li class="main-menu__item"><a class='toplink' href="#contact" id="contact-menu">Contact</a></li>
            </ul>
          </nav>
          
          <article class="promo">
            <div class="promo__logo"></div>
-           <h2>Hello</h2>
-           <h1>My name is <span>Stanislav</span></h1>
-           <p>I'm a Ui/UX front-end developer borned in Cherniwtsi</p>
+           <h2 class="promo__title">Hello</h2>
+           <h1 class="promo__intro">My name is <b>Stanislav</b></h1>
+           <p class="promo__descr">I'm a Ui/UX front-end developer borned in Cherniwtsi</p>
            <div class="promo__anchor">
-             <a href="#"></a>
-             <a href="#"></a>
-             <a href="#"></a>
+             <a href="https://twitter.com" target="_blank"><i class="icon-twitter"></i></a>
+             <a href="https://dribbble.com/" target="_blank"><i class="icon-dribbble"></i></a>
+             <a href="https://www.behance.net/" target="_blank"><i class="icon-behance"></i></a>
            </div> 
            <div class="promo__info">
-             <span>Age: <i>23</i></span>
-             <span>Country: <i>Ukraine</i></span>
-             <span>Working at: <i>Freelance</i></span>
+             <span>Age: <i> 21</i></span>
+             <span>Country: <i> Ukraine</i></span>
+             <span>Working at: <i> Freelance</i></span>
            </div>
          </article>
        </div>
@@ -51,38 +52,41 @@
       
        <article class="about">
          <div class="inner">
-           <div class="about__logo"></div>
-           <a href="" class="about__anchor">About</a>
-           <p>Do you want to know me?</p>
+           <div class="about__logo"><i class="icon-user"></i></div>
+           <a href="#about-menu" id="about" class="about__anchor  toplink">About</a>
+           <p class="about__phrase">Do you want to know me?</p>
            <section class="about-intro">
-             <h3>Who am i?</h3>
+             <h3 class="about-intro__title">Who am i?</h3>
              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius repellendus et inventore soluta cumque reprehenderit totam quaerat ratione qui enim unde, adipisci labore hic deleniti, eligendi minus neque explicabo ullam odio, corrupti recusandae aspernatur voluptatibus delectus ducimus itaque. Earum magni ipsum iste at perferendis adipisci tempore voluptate, quasi cumque vel?</p>
              <p>Hic iusto ullam pariatur totam ab est illum rerum esse, iste vero iure saepe beatae fuga, magnam neque nihil quam. Non debitis quos minima dolores perferendis reprehenderit eos labore suscipit cumque maiores sunt, odit veritatis, quasi facilis omnis deleniti eveniet inventore ipsum. In voluptatem, fuga, odio quos vel dolorum molestiae.</p>
              <div class="promo__anchor"><!--  вирізав з хедера бо стилі там реально однакові, далі буде видно -->
-             <a href="#"></a>
-             <a href="#"></a>
-             <a href="#"></a>
+               <a href="https://twitter.com" target="_blank"><i class="icon-twitter"></i></a>
+               <a href="https://dribbble.com/" target="_blank"><i class="icon-dribbble"></i></a>
+               <a href="https://www.behance.net/" target="_blank"><i class="icon-behance"></i></a>
              </div> 
            </section>
-           <div class="about-center-column"></div>
+           <div class="about-center-column">
+            <!--  <div class="about-center-column__circle"></div> -->
+             <img src="/graph/img/main-about-circle.png" alt="">
+           </div>
            <section class="about-skills">
-             <h3>My Skills</h3>
-             <p>Desighn programs</p>
-             <div class="bar"></div>
-             <div class="bar"></div>
-             <div class="bar"></div>
-             <p>Coding programs</p>
-             <div class="bar"></div>
-             <div class="bar"></div>
-             <div class="bar"></div>
+             <h3 class='about-skills__title'>My Skills</h3>
+             <p class="about-skills__group">Desighn programs</p>
+             <div class="bar"> <div class="fill  fill__ph" style="width:100%">Adobe Photoshop</div></div>
+             <div class="bar"><div class="fill  fill__il" style="width:75%">Adobe Illustrator</div></div>
+             <div class="bar"><div class="fill  fill__id" style="width:37%">Adobe Indesign</div></div>
+             <p class="about-skills__group">Coding programs</p>
+             <div class="bar"><div class="fill  fill__html" style="width:80%">Html  /html5</div></div>
+             <div class="bar"><div class="fill  fill__css" style="width:72%">CSS / CSS3</div></div>
+             <div class="bar"><div class="fill fill__js" style="width:45%">Javasript / jquery</div></div>
            </section>
          </div>
        </article>
 
        <article class="portfolio">
          <div class="inner">
-           <a href="#" class="portfolio__anchor">Portfolio</a>
-           <p>Do you want to know me?</p>
+           <a id="work" href="#work-menu" class="portfolio__anchor  toplink">Portfolio</a>
+           <p class="portfolio__phrase">Do you want to know me?</p>
            <section class="project">
              <div class="project__name">
                <h3>Project name:</h3>
@@ -99,7 +103,7 @@
              </div>
              <div class="project__site">
                <h3>Project site or adress:</h3>
-               <ul>
+               <ul class="site-list">
                  <li><a href="#">http://www.uipixels.com/</a></li>
                </ul>
              </div>
@@ -110,115 +114,154 @@
            </section>
            <section class="project-slider">
            </section>
-           <div class="portfolio__groups">
-             <ul>
-               <li><a href="#">Group1</a></li>
-               <li><a href="#">Group2</a></li>
-               <li><a href="#">Group3</a></li>
-               <li><a href="#">Group4</a></li>
-               <li><a href="#">Group5</a></li>
+             <ul class="portfolio__groups">
+               <li><a class="group-active" href="#">All</a></li>
+               <li><a href="#">Web design</a></li>
+               <li><a href="#">Coding</a></li>
+               <li><a href="#">Photography</a></li>
+               <li><a href="#">Frepies</a></li>
              </ul>
-           </div>
            <div class="project-choose">
+             <div class="container-line">
+               <div class="container">
+                 <h2>iOS 7 Weather App Desıgn</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, assumenda!</p>
+                 <a href="#"><i class="icon-plus"></i></a>
+               </div>
+               <div class="container">
+                 <h2>iOS 7 Weather App Desıgn</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, assumenda!</p>
+                 <a href="#"><i class="icon-plus"></i></a>
+               </div>
+               <div class="container">
+                 <h2>iOS 7 Weather App Desıgn</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, assumenda!</p>
+                 <a href="#"><i class="icon-plus"></i></a>
+               </div>
+               <div class="container">
+                 <h2>iOS 7 Weather App Desıgn</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, assumenda!</p>
+                 <a href="#"><i class="icon-plus"></i></a>
+               </div>
+             </div>
+             <div class="container-line container-line--second">
+               <div class="container">
+                 <h2>iOS 7 Weather App Desıgn</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, assumenda!</p>
+                 <a href="#"><i class="icon-plus"></i></a>
+               </div>
+               <div class="container">
+                 <h2>iOS 7 Weather App Desıgn</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, assumenda!</p>
+                 <a href="#"><i class="icon-plus"></i></a>
+               </div>
+               <div class="container">
+                 <h2>iOS 7 Weather App Desıgn</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, assumenda!</p>
+                 <a href="#"><i class="icon-plus"></i></a>
+               </div>
+             </div>
            </div>
          </div>
        </article>
          
        <article class="blog">
+         <a href="#blog-menu" id="blog" class="blog__anchor  toplink">Blog</a>
+         <p class="blog__phrase">Recent blog articles</p>
          <div class="inner-2">
-           <a href="#" class="blog__anchor">Blog</a>
-           <p>Recent blog writings</p>
-           <article class="blog__article  article">
-             <img src="" alt="">
-             <h2 class="article__title">Ut interdum tortor eu sapien mattis tempus</h2>
-             <p class="article__info">24 OCT 2013 in FREE PSDS - 2 Comments</p>
-             <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, voluptate, ad! In inventore ducimus maxime nemo. Fugiat aliquid deserunt optio, ut quasi sunt quam voluptatibus. Totam ab, perspiciatis ut tempore.</p>
-             <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ullam soluta magnam eius eveniet nisi numquam veritatis enim consequatur, eos temporibus quo veniam nesciunt corrupti. Deserunt eligendi cumque recusandae debitis nisi, dolor magni explicabo ex veniam dolores pariatur, ducimus tempore sint perspiciatis dicta nulla aspernatur fugiat, in dolorum cum laboriosam.</p>
-             <div class="article__tags"><span><b>Tags:</b> free, psd, megi, themes</span></div>
-           </article>
-           <section class="blog__replies">
-             <article class="comment">
-               <img src="" alt="">
-               <h4 class="comment__author">Vova Huryk</h4>
-               <p class="conmment__info">October 1, 2014 at 9:05 pm - <a href="#">Reply</a></p>
-               <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo libero temporibus in optio autem nihil beatae doloribus natus exercitationem distinctio.</p>
+           <div class="blog__container">
+             <article class="blog__article  article">
+               <img src="http://placehold.it/670x310" alt="">
+               <h2 class="article__title">Ut interdum tortor eu sapien mattis tempus</h2>
+               <p class="article__info">24 OCT 2013 in <b>FREE PSDS</b> - 2 Comments</p>
+               <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, voluptate, ad! In inventore ducimus maxime nemo. Fugiat aliquid deserunt optio, ut quasi sunt quam voluptatibus. Totam ab, perspiciatis ut tempore.</p>
+               <p class="article__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <b>Dignissimos ullam soluta</b> magnam eius eveniet nisi numquam veritatis enim consequatur, eos temporibus quo veniam nesciunt corrupti. Deserunt eligendi cumque recusandae debitis nisi, dolor magni explicabo ex veniam dolores pariatur, ducimus tempore sint perspiciatis dicta nulla aspernatur fugiat, in dolorum cum laboriosam.</p>
+               <div class="article__tags"><span><b>Tags:</b> free, psd, megi, themes</span></div>
              </article>
-             <article class="comment">
-               <img src="" alt="">
-               <h4 class="comment__author">Jenia Sorohan</h4>
-               <p class="conmment__info">October 1, 2014 at 9:05 pm - <a href="#">Reply</a></p>
-               <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo libero temporibus in optio autem nihil beatae doloribus natus exercitationem distinctio.</p>
-             </article>
-             <article class="comment">
-               <img src="" alt="">
-               <h4 class="comment__author">Nikita Keks</h4>
-               <p class="conmment__info">October 1, 2014 at 9:05 pm - <a href="#">Reply</a></p>
-               <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo libero temporibus in optio autem nihil beatae doloribus natus exercitationem distinctio.</p>
-             </article>
-           </section>
-           <form class="blog__reply-field  reply-field">
-             <div class="reply-field__title">Leave a reply</div>
-             <p class="reply-field__commentary">Your email address will not be published. Required fields are marked with *</p>
-             <input type="text">
-             <input type="text">
-             <textarea name="" id="" cols="30" rows="10"></textarea>
-             <p class="reply-field__description">
-               You may use these HTML tags and attributes: &lt;a href="" title=""> &lt;abbr title=""> &lt;acronym title=""> &lt;b> &lt;blockquote cite=""> &lt;cite> &lt;code> &lt;del datetime=""> &lt;em> &lt;i> &lt;q cite=""> &lt;strike> &lt;strong>
-             </p>
-             <a href="" class="reply-field__btn">Post comment</a>
-           </form>
+             <section class="blog__replies">
+               <p class="comment__count">3 comments</p>
+               <article class="comment">
+                 <img src="http://placehold.it/70x70" alt="">
+                 <h4 class="comment__author">Vova Huryk</h4>
+                 <p class="comment__info">October 1, 2014 at 9:05 pm - <a href="#">Reply</a></p>
+                 <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo libero temporibus in optio autem nihil beatae doloribus natus exercitationem distinctio.</p>
+               </article>
+               <article class="comment comment__reply">
+                 <img src="http://placehold.it/70x70" alt="">
+                 <h4 class="comment__author">Jenia Sorohan</h4>
+                 <p class="comment__info">October 1, 2014 at 9:05 pm - <a href="#">Reply</a></p>
+                 <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus porro blanditiis molestiae quae cupiditate ad nemo dicta, optio aliquam praesentium officia. Accusamus iusto magni numquam, ad! Tempora error minus ipsam, unde eaque sit, neque aspernatur. Facere repellat quos, maiores, quam repudiandae asperiores sit recusandae nesciunt ducimus est, assumenda. Beatae quos doloribus, eligendi quisquam. Quae soluta provident, commodi dolore ad possimus!</p>
+               </article>
+               <article class="comment">
+                 <img src="http://placehold.it/70x70" alt="">
+                 <h4 class="comment__author">Nikita Keks</h4>
+                 <p class="comment__info">October 1, 2014 at 9:05 pm - <a href="#">Reply</a></p>
+                 <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo libero temporibus in optio autem nihil beatae doloribus natus exercitationem distinctio.</p>
+               </article>
+             </section>
+             <form class="blog__reply-field  reply-field" method="post">
+               <div class="reply-field__title">Leave a reply</div>
+               <p class="reply-field__commentary">Your email address will not be published. Required fields are marked with *</p>
+               <input class="reply-field__name" type="text" name="name" placeholder="Your name *" required>
+               <input class="reply-field__email" type="email" name="email" placeholder="Your email *" required>
+               <textarea class="reply-field__comment" name="content" id="" cols="" rows="" placeholder="Comment *" required></textarea>
+               <p class="reply-field__description">
+                 You may use these HTML tags and attributes: &lt;a href="" title=""> &lt;abbr title=""> &lt;acronym title=""> &lt;b> &lt;blockquote cite=""> &lt;cite> &lt;code> &lt;del datetime=""> &lt;em> &lt;i> &lt;q cite=""> &lt;strike> &lt;strong>
+               </p>
+               <input class="reply-field__post-btn" type="submit" name="post" value="Post Comment">
+             </form>
+           </div>
+           <aside class="sidebar">
+             <div class="sidebar__title">Search</div>
+             <input class="sidebar__search" type="text" name='search'>
+             <div class="sidebar__title">Categories</div>
+             <ul class="sidebar__list">
+               <li><a href="#">Lorem.</a></li>
+               <li><a href="#">Ratione.</a></li>
+               <li><a href="#">Deleniti!</a></li>
+               <li><a href="#">Quis.</a></li>
+             </ul>
+             <div class="sidebar__title">Archives</div>
+             <ul class="sidebar__list">
+               <li><a href="#">Lorem 2014</a></li>
+               <li><a href="#">Ratione 2015</a></li>
+               <li><a href="#">Deleniti 2015</a></li>
+             </ul>
+           </aside>
          </div>
        </article>
-       
-       <aside class="sidebar">
-         <div class="inner-2">
-           <div class="sidebar__title">Search</div>
-           <input type="text">
-           <div class="sidebar__title">Categories</div>
-           <ul class="sidebar__list">
-             <li><a href="#">Lorem.</a></li>
-             <li><a href="#">Ratione.</a></li>
-             <li><a href="#">Deleniti!</a></li>
-             <li><a href="#">Quis.</a></li>
-           </ul>
-           <div class="sidebar__title">Archives</div>
-           <ul class="sidebar__list">
-             <li><a href="#">Lorem 2014</a></li>
-             <li><a href="#">Ratione 2015</a></li>
-             <li><a href="#">Deleniti 2015</a></li>
-           </ul>
-         </div>
-       </aside>
         
        <section class="carousel">
          <div class="inner">
            <ul class="carousel__list">
              <li>
-               <img src="" alt="">
+               <img src="http://placehold.it/320x300" alt="">
                <h2 class="carousel__title">Lorem ipsum dolor sit amet.</h2>
                <p class="carousel__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, nobis.</p>
                <a href="" class="carousel__expand">Read more</a>
              </li>
              <li>
-               <img src="" alt="">
+               <img src="http://placehold.it/320x300" alt="">
                <h2 class="carousel__title">Officia, iusto, dicta. Unde, corporis?</h2>
                <p class="carousel__description">Voluptas iusto maiores hic, vitae modi illo velit cum perspiciatis.</p>
                <a href="" class="carousel__expand">Read more</a>
              </li>
              <li>
-               <img src="" alt="">
+               <img src="http://placehold.it/320x300" alt="">
                <h2 class="carousel__title">Consectetur facilis, corporis tempora dicta.</h2>
                <p class="carousel__description">Eum, necessitatibus libero eaque recusandae iusto, maxime optio vero. Rem?</p>
                <a href="" class="carousel__expand">Read more</a>
              </li>
              <li>
-               <img src="" alt="">
+               <img src="http://placehold.it/320x300" alt="">
                <h2 class="carousel__title">Porro atque ea quia, distinctio!</h2>
                <p class="carousel__description">Nisi atque tenetur quia id consequuntur earum, nam, eligendi in?</p>
                <a href="" class="carousel__expand">Read more</a>
              </li>
            </ul>
-           <div class="carousel__scrollbar"></div>
+           <div class="carousel__scrollbar">
+             <div class="bar" style="margin-left:0"></div>
+           </div>
          </div>
        </section> 
        
@@ -228,8 +271,8 @@
      <footer>
       
        <article class="twitter-slider">
-         <div class="inner">
-           <div class="twitter-slider__logo"></div>
+         <div class="inner-2">
+           <div class="twitter-slider__logo  icon-twitter"></div>
            <section class="twitter-slider__slide  slide">
              <p class="slide__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ullam, officia tempora excepturi quam laudantium!</p>
              <p class="slide__author">@emrahdemirag</p>
@@ -243,15 +286,15 @@
        
        <article class="contact">
          <div class="inner-2">
-           <a href="" class="contact__anchor">Contact</a>
-           <p>Recent blog writings</p>
-           <a href="#" class="contact__email">lolkokpol@gmail.com</a>
-           <div class="contact__telephone">+8(095) 3 595 685</div>
-           <form action="" class="contact__form">
-             <input type="text">
-             <input type="text">
-             <textarea name="" id="" cols="30" rows="10"></textarea>
-             <a href="" class="contact__btn">Send Message</a>
+           <a href="#contact-menu" id="contact" class="contact__anchor  toplink">Contact</a>
+           <p class="contact__phrase">Recent blog writings</p>
+           <a href="#" class="contact__email  icon-email">lolkokpol@gmail.com</a>
+           <div class="contact__telephone  icon-phone">+8(095) 3 595 456</div>
+           <form action="" class="contact__form" method="post">
+             <input  type="text" name="name" placeholder="Your name *" required>
+             <input  type="email" name="email" placeholder="Your email *" required>
+             <textarea  name="content" id="" cols="" rows="" placeholder="Comment *" required></textarea>
+             <input type="submit" value="Send message">
            </form>
          </div>
        </article>
@@ -264,6 +307,8 @@
        
      </footer>
     
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/function.js"></script>
   </body>
   
 </html>

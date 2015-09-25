@@ -1,0 +1,114 @@
+header {
+  background: @bg-header;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 125px;
+}
+
+.main-menu {
+  width: 80%;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  &__item {
+    display: inline-block;
+    width: 25%;
+    margin-right: -4px;
+    text-align: center;
+  }
+  a {
+    display: block;
+    padding: 20px;
+    margin-bottom: 120px;
+    font-size: @font-size-15;
+    line-height: 1;
+  }
+}
+
+.promo {
+  text-align: center;
+  &__logo {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background: white;
+    border: 13px solid @bg-header;
+    box-shadow: 0 0 0 2px white;
+    border-radius: 50%;
+    background: url("/graph/img/header-logo.png") no-repeat 50% 47% white;
+  }
+  &__title {
+    margin-bottom: 25px;
+    font-size: @font-size-30;
+    line-height: @line-height-30; 
+    text-transform: uppercase;
+  }
+  &__intro {
+    margin-bottom: 25px;
+    font-size: 66px;
+    line-height: 66px;
+    font-weight: 300;
+  }
+  &__descr {
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: @line-height-30;
+    font-weight: 200;
+  }
+  &__info {
+    width: 800px;  /* 55% під питанням */
+    margin: 0 auto;
+    font-size: @font-size-18;
+    line-height: @line-height-30;
+    span {
+      margin-left: 7%; /* 50px */
+      margin-right: 7%;
+    }
+    i {
+      font-style: normal;
+      text-transform: uppercase;
+      color: @bg-gold;
+    }
+  }
+}
+
+.promo__anchor {
+  text-align: center;
+  width: 420px;
+  margin: 0 auto;
+  margin-bottom: 160px;
+  position: relative;
+  a {
+    display: inline-block;
+    margin-right: 20px;
+    width: 42px;
+    height: 42px;
+    border: 2px solid @color-social-btn;
+    border-radius: 50%;
+  }
+  i {
+    font-size: 25px;
+    color: @color-social-btn;
+    position: relative;
+    top: 4px;
+  }
+  .icon-behance {
+    right: 1px;
+  }
+}
+.promo__anchor:after,
+.promo__anchor:before{
+  position: absolute;
+  top: 50%;
+  content: "";
+  width:87px;
+  height: 2px;
+  background: @color-social-btn;
+}
+.promo__anchor:before {
+  left: 20px;
+}
+.promo__anchor:after {
+  right: 41px;
+}
