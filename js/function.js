@@ -1,3 +1,5 @@
+<!-- Smooth_anchor_scroll -->
+  
 $("a.toplink").click(function() {
     $("html, body").animate({
        scrollTop: $($(this).attr("href")).offset().top + "px"
@@ -7,3 +9,5 @@ $("a.toplink").click(function() {
     });
     return false;
  });
+
+<!--  -->

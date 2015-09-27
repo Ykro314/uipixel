@@ -104,6 +104,7 @@ header {
   list-style: none;
   padding: 0;
   margin: 0 auto;
+  margin-bottom: 120px;
 }
 .main-menu__item {
   display: inline-block;
@@ -114,7 +115,6 @@ header {
 .main-menu a {
   display: block;
   padding: 20px;
-  margin-bottom: 120px;
   font-size: 15px;
   line-height: 1;
 }
@@ -158,9 +158,11 @@ header {
   line-height: 30px;
 }
 .promo__info span {
+  display: inline-block;
   margin-left: 7%;
   /* 50px */
   margin-right: 7%;
+  margin-bottom: 10px;
 }
 .promo__info i {
   font-style: normal;
@@ -419,10 +421,11 @@ header {
 }
 .project__tags {
   padding-top: 15px;
+  margin-bottom: 60px;
 }
 .project-slider {
-  background: #5c5766;
   margin-bottom: 60px;
+  background: #5c5766;
 }
 .portfolio__groups {
   list-style: none;
@@ -446,9 +449,6 @@ header {
 .portfolio__groups .group-active {
   border: 1px solid #fff0ca;
 }
-.project-choose {
-  /*   text-align: center; */
-}
 .project-choose .container {
   display: inline-block;
   margin-right: 120px;
@@ -468,6 +468,7 @@ header {
 }
 .project-choose .container:last-child {
   margin-right: -4px;
+  /* display: none; */
 }
 .project-choose .container:after {
   content: "";
@@ -679,6 +680,7 @@ header {
   color: #cacaca;
 }
 .reply-field__post-btn {
+  display: block;
   text-align: center;
   background: #ffd670;
   color: white;
@@ -770,12 +772,12 @@ header {
 }
 .carousel__scrollbar {
   height: 20px;
-  margin-left: 30px;
+  margin-left: 2.2%;
   background: #f3f3f3;
 }
 .carousel .bar {
   height: 100%;
-  width: 500px;
+  width: 35%;
   background: #ffd670;
   border-radius: 8px;
   cursor: pointer;
@@ -890,10 +892,10 @@ header {
 .contact__email,
 .contact__telephone {
   position: relative;
+  display: inline-block;
   padding: 17px 0;
   padding-left: 110px;
   margin-bottom: 40px;
-  display: inline-block;
   text-transform: none;
   color: #a5aabe;
   font-size: 20px;
@@ -918,12 +920,12 @@ header {
   font-size: 28px;
   color: #ffd670;
 }
-.contact .contact__form {
+.contact__form {
   text-align: left;
 }
-.contact .contact__form input[type="email"],
-.contact .contact__form input[type="text"],
-.contact .contact__form textarea {
+.contact__form input[type="email"],
+.contact__form input[type="text"],
+.contact__form textarea {
   display: inline-block;
   box-sizing: border-box;
   padding: 20px;
@@ -934,18 +936,18 @@ header {
   border-radius: 5px;
   border: none;
 }
-.contact .contact__form input[type="text"] {
+.contact__form input[type="text"] {
   width: 47%;
   margin-right: 5%;
 }
-.contact .contact__form input[type="email"] {
+.contact__form input[type="email"] {
   width: 47%;
 }
-.contact .contact__form textarea {
+.contact__form textarea {
   width: 100%;
   height: 200px;
 }
-.contact .contact__form input[type="submit"] {
+.contact__form input[type="submit"] {
   display: block;
   width: 300px;
   margin: 0 auto;
@@ -968,4 +970,153 @@ header {
   color: #cacaca;
   font-size: 13px;
   line-height: 30px;
+}
+@media (max-width: 1425px) {
+  .carousel__list li:last-child {
+    display: none;
+  }
+}
+@media (max-width: 1370px) {
+  .project-choose {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .project-choose .container-line {
+    display: inline-block;
+    /* margin-left: 120px; */
+  }
+  .project-choose .container-line--second {
+    margin-left: 0px;
+    /* margin-left: 178+120px; */
+  }
+  .project-choose .container {
+    margin-left: 120px;
+    margin-right: -4px;
+  }
+  .project-choose .container:first-child {
+    margin-left: 0px;
+  }
+  .project-choose .container:last-child {
+    display: none;
+  }
+}
+@media (max-width: 1230px) {
+  .about .about-intro {
+    width: 47%;
+  }
+  .about .about-center-column {
+    display: none;
+  }
+  .about .about-skills {
+    width: 47%;
+  }
+}
+@media (max-width: 1072px) {
+  .promo__info {
+    width: 100%;
+  }
+  .portfolio .project {
+    width: 100%;
+  }
+  .portfolio .project-slider {
+    width: 93%;
+    height: 500px;
+  }
+  .project-choose {
+    width: 700px;
+  }
+  .project-choose .container--hide {
+    display: none;
+  }
+  .blog__container {
+    width: 75%;
+  }
+  .blog .sidebar {
+    width: 23%;
+  }
+  .carousel__list li:last-child {
+    display: inline-block;
+  }
+}
+@media (max-width: 722px) {
+  .project-choose,
+  .portfolio__groups {
+    display: none;
+  }
+  .carousel__list li.hide {
+    display: none;
+  }
+  .carousel__list li {
+    margin-left: 5px;
+  }
+  .blog__container {
+    width: 100%;
+  }
+  .blog__container .reply-field__post-btn {
+    margin: 0 auto;
+  }
+  .blog .sidebar {
+    display: none;
+  }
+}
+@media (max-width: 620px) {
+  .main-menu {
+    width: 100%;
+  }
+  .about .about-intro {
+    margin-left: 3%;
+    width: 92%;
+    margin-bottom: 50px;
+  }
+  .about .about-skills {
+    width: 92%;
+  }
+  .carousel__list li {
+    margin-left: 0px;
+  }
+  .carousel__list li img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 430px) {
+  .main-menu li {
+    width: 48%;
+  }
+  .promo__intro {
+    font-size: 50px;
+  }
+  .promo__anchor {
+    width: 100%;
+  }
+  .promo__anchor:before,
+  .promo__anchor:after {
+    display: none;
+  }
+  .portfolio .project-slider {
+    height: 300px;
+  }
+  .comment__reply {
+    margin-left: 0px;
+  }
+  .reply-field__name,
+  .reply-field__email {
+    width: 100%;
+  }
+  .contact {
+    text-align: left;
+  }
+  .contact__form input[type="text"],
+  .contact__form input[type="email"] {
+    width: 100%;
+  }
+  .contact__email,
+  .contact__telephone {
+    font-size: 17px;
+  }
+}
+@media (max-width: 350px) {
+  .carousel__list li {
+    width: 100%;
+  }
 }
