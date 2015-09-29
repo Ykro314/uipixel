@@ -159,6 +159,7 @@
 }
 
 .portfolio {
+  overflow: hidden; /* треба для нормального відображення трансформацій в .project-choose, забирає горизонтальний скроллбар */
   background: @bg-gold;
   color: white;
   padding: 100px 0;
@@ -257,13 +258,20 @@
     margin-right: 120px; /* 120 */
     position: relative;
     text-align: center;
-    transform: rotate(45deg);
+    transform: rotate(45deg) translateX(50px);
     box-sizing: border-box;
     padding: 15px;
     width: 230px;
     height: 230px;
     background: @bg-header;
     border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  .show {
+    transform: rotate(45deg) translateX(0);
+    opacity: 1;
   }
   .container:first-child {
     margin-left: 50px;
@@ -543,11 +551,15 @@
 }
 
 .carousel {
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 30px;
   &__list {
+    width: 2800px; /* (320*8)+(30*8) */
     list-style: none;
     padding: 0;
     margin: 0;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
   li {
     background: #f3f3f3;

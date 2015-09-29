@@ -10,4 +10,27 @@ $("a.toplink").click(function() {
     return false;
  });
 
-<!--  -->
+
+
+<!-- Landing elements -->
+
+$(window).scroll(function(){
+  
+  
+  var wscroll = $(this).scrollTop();
+  
+  if (wscroll > $(".project-choose").offset().top - ($(window).height() / 1.4)) {
+    
+    $(".container").each(function(i){
+      
+      setTimeout(function(){
+       $(".container").eq(i).addClass("show"); 
+      }, 150 * (i+1));
+      
+    
+    });
+    
+  }
+  
+  
+});
