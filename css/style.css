@@ -145,7 +145,7 @@ header {
   border: 13px solid #5c5766;
   box-shadow: 0 0 0 2px white;
   border-radius: 50%;
-  background: url("/graph/img/header-logo.png") no-repeat 50% 47% white;
+  background: url("/uipixel/graph/img/header-logo.png") no-repeat 50% 47% white;
 }
 .promo__title {
   margin-bottom: 25px;
@@ -773,7 +773,7 @@ header {
   margin-bottom: 20px;
   box-sizing: border-box;
   font-size: 15px;
-  background-image: url("/graph/img/main-icon-search.png");
+  background-image: url("/uipixel/graph/img/main-icon-search.png");
   background-repeat: no-repeat;
   background-position: 94% 50%;
   background-color: #f8f8f8;
