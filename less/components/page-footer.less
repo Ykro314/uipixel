@@ -56,6 +56,12 @@
       border-bottom: none;
       border-left: none;
     }
+    a:hover,
+    a:hover:before{
+      transition: all 0.3s;
+      background: white;
+      border-color: @bg-header;
+    }
   }
 }  
 
@@ -99,6 +105,12 @@
     content: "";
     background: #dbdde5; 
   }
+  &__anchor:hover,
+  &__anchor:hover:after {
+    transition: all 0.3s;
+    left: 0;
+    width: 210px;
+  }
   &__phrase{
     margin-bottom: 100px;
     text-align: center;
@@ -133,7 +145,7 @@
   &__email:before,
   &__telephone:before {
     position: absolute;
-    top:19px;
+    top: 19px;
     left: 37px;
     font-size: 28px;
     color: @bg-gold;
@@ -193,3 +205,21 @@
 }
 
 
+input[type='text']:hover,
+input[type='email']:hover,
+textarea:hover{
+  transition: all 0.2s;
+  background-color: #eaeaea;
+}
+
+input[type='submit']:hover {
+  transition: 0.3s all;
+  background: #ffcb49;
+}
+input[type="submit"]:active {
+  background: white;
+  color: #ffcb49;
+}
+input[type="submit"]:focus {
+  outline-color: #ffcb49;
+}

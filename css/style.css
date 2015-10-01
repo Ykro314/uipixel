@@ -19,6 +19,10 @@ a {
   text-transform: uppercase;
   text-decoration: none;
 }
+input[type='text']:hover,
+input[type='email']:hover {
+  background: red;
+}
 .inner {
   max-width: 1400px;
   padding: 0 5px;
@@ -116,10 +120,18 @@ header {
   text-align: center;
 }
 .main-menu a {
-  display: block;
+  display: inline-block;
   padding: 20px;
   font-size: 15px;
   line-height: 1;
+}
+.main-menu a:hover {
+  transition: all 0.3s;
+  box-shadow: 0 3px 0 0 white;
+}
+.main-menu a:active {
+  color: #d1d1d1;
+  box-shadow: 0 0 0 2px white;
 }
 .promo {
   text-align: center;
@@ -193,6 +205,12 @@ header {
   position: relative;
   top: 4px;
 }
+.promo__anchor a:hover,
+.promo__anchor a:hover i {
+  transition: all 0.3s;
+  border-color: white;
+  color: white;
+}
 .promo__anchor .icon-behance {
   right: 1px;
 }
@@ -252,6 +270,13 @@ header {
   height: 2px;
   content: "";
   background: #736588;
+}
+.about__anchor:hover,
+.about__anchor:hover:after {
+  transition: all 0.3s;
+  /* color: #d7d7d7; */
+  left: 0;
+  width: 140px;
 }
 .about__phrase {
   margin-bottom: 100px;
@@ -388,6 +413,12 @@ header {
   height: 2px;
   content: "";
   background: white;
+}
+.portfolio__anchor:hover,
+.portfolio__anchor:hover:after {
+  transition: all 0.3s;
+  left: 0;
+  width: 200px;
 }
 .portfolio__phrase {
   margin-bottom: 100px;
@@ -557,6 +588,12 @@ header {
   height: 2px;
   content: "";
   background: #dbdde5;
+}
+.blog__anchor:hover,
+.blog__anchor:hover:after {
+  transition: all 0.3s;
+  left: 0;
+  width: 140px;
 }
 .blog__phrase {
   margin-bottom: 100px;
@@ -736,13 +773,18 @@ header {
   margin-bottom: 20px;
   box-sizing: border-box;
   font-size: 15px;
-  background: url("/graph/img/main-icon-search.png") no-repeat 94% 50% #f8f8f8;
+  background-image: url("/graph/img/main-icon-search.png");
+  background-repeat: no-repeat;
+  background-position: 94% 50%;
+  background-color: #f8f8f8;
   border-radius: 5px;
   border: none;
 }
 .carousel {
+  padding-top: 20px;
   width: 100%;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   margin-bottom: 30px;
 }
 .carousel__list {
@@ -755,8 +797,16 @@ header {
 }
 .carousel li {
   background: #f3f3f3;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+.carousel li:hover {
+  transition: all 0.3s;
+  transform: scale(1.07);
 }
 .carousel img {
+  width: 320px;
+  height: 300px;
   margin-bottom: 30px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -860,6 +910,12 @@ header {
   border-bottom: none;
   border-left: none;
 }
+.twitter-slider__controls a:hover,
+.twitter-slider__controls a:hover:before {
+  transition: all 0.3s;
+  background: white;
+  border-color: #5c5766;
+}
 .slide {
   font-size: 18px;
   line-height: 37px;
@@ -898,6 +954,12 @@ header {
   height: 2px;
   content: "";
   background: #dbdde5;
+}
+.contact__anchor:hover,
+.contact__anchor:hover:after {
+  transition: all 0.3s;
+  left: 0;
+  width: 210px;
 }
 .contact__phrase {
   margin-bottom: 100px;
@@ -988,6 +1050,23 @@ header {
   color: #cacaca;
   font-size: 13px;
   line-height: 30px;
+}
+input[type='text']:hover,
+input[type='email']:hover,
+textarea:hover {
+  transition: all 0.2s;
+  background-color: #eaeaea;
+}
+input[type='submit']:hover {
+  transition: 0.3s all;
+  background: #ffcb49;
+}
+input[type="submit"]:active {
+  background: white;
+  color: #ffcb49;
+}
+input[type="submit"]:focus {
+  outline-color: #ffcb49;
 }
 /* @media (max-width: 1425px) {
   .carousel {
